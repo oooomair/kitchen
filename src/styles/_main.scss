@@ -1,0 +1,265 @@
+.main {
+  padding: 50px 0;
+}
+
+.genres {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 30px 0;
+  h1 {
+    font-size: 3.3rem;
+  }
+  span {
+    color: #e8a900;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 1.5rem;
+    padding: 0 50px 50px 50px;
+    text-align: center;
+  }
+}
+
+.foods {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.food {
+  display: flex;
+  cursor: pointer;
+  &:hover .food_content h3 {
+    &::after {
+      visibility: visible;
+      width: 100%;
+    }
+  }
+  img {
+    height: 170px;
+    min-width: 300px;
+  }
+  .food_content {
+    padding-left: 15px;
+    display: flex;
+    flex-flow: column;
+    h3 {
+      font-size: 1.5rem;
+      display: block;
+      position: relative;
+      width: max-content;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        bottom: 2px;
+        left: 0;
+        background-color: #e8a900;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+.foods > div:first-of-type {
+  display: block;
+  grid-row: 3 span;
+  img {
+    height: auto;
+    width: 100%;
+  }
+  .food_content {
+    padding-left: 0;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    h3 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .foods {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .food {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    img {
+      height: 170px;
+      width: 300px;
+    }
+    .food_content {
+      padding-left: 0;
+      display: flex;
+      h3 {
+        font-size: 1.5rem;
+      }
+      p {
+        display: none;
+      }
+    }
+  }
+
+  .foods > div:first-of-type {
+    display: block;
+    grid-row: 3 span;
+    img {
+      height: auto;
+      width: 100%;
+    }
+    .food_content {
+      padding-left: 0;
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      h3 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.3rem;
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .genres {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 70px 0;
+    text-align: center;
+    h1 {
+      font-size: 3.3rem;
+    }
+    span {
+      color: #e8a900;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 1.5rem;
+      padding: 0 0 50px 0;
+      text-align: center;
+    }
+  }
+
+  .foods {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .food {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    img {
+      height: auto;
+      width: 100%;
+    }
+    .food_content {
+      padding-left: 0;
+      display: flex;
+      h3 {
+        font-size: 2.5rem;
+        &::after {
+          display: none;
+        }
+      }
+      p {
+        display: block;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .genres {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 40px 0;
+    text-align: center;
+    h1 {
+      font-size: 2.6rem;
+    }
+    span {
+      color: #e8a900;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 1.2rem;
+      padding: 0 0 50px 0;
+      text-align: center;
+    }
+  }
+
+  .foods {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .food {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    img {
+      height: auto;
+      min-width: 0;
+      width: 100%;
+    }
+    .food_content {
+      padding-left: 0;
+      display: flex;
+      h3 {
+        font-size: 2rem;
+        margin: 0 auto;
+      }
+      p {
+        display: block;
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .foods > div:first-of-type {
+    display: block;
+    grid-row: 3 span;
+    img {
+      height: auto;
+      width: 100%;
+    }
+    .food_content {
+      padding-left: 0;
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.1rem;
+        display: block;
+      }
+    }
+  }
+}

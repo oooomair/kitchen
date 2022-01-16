@@ -1,0 +1,11 @@
+<svg width="1156" height="650" viewBox="0 0 1156 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame">
+<g id="Vector">
+<mask id="path-1-inside-1_133_6" fill="white">
+<path d="M723.96 21.6013H1144.32V454.331"/>
+</mask>
+<path d="M1144.32 21.6013H1146.32V19.6013H1144.32V21.6013ZM723.96 23.6013H1144.32V19.6013H723.96V23.6013ZM1142.32 21.6013V454.331H1146.32V21.6013H1142.32Z" fill="#E8A900" mask="url(#path-1-inside-1_133_6)"/>
+</g>
+<path id="Vector_2" d="M46.74 43.3333V0.5H1109.26V43.3333V43.8333H1109.76H1155.5V606.167H1109.76H1109.26V606.667V649.5H46.74V606.667V606.167H46.24H0.5V43.8333H46.24H46.74V43.3333Z" stroke="#35858B"/>
+</g>
+</svg>
