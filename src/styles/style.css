@@ -222,7 +222,7 @@ li {
             align-items: center;
     padding: 25px 0;
   }
-  .navbar h1 {
+  .navbar h6 {
     font-size: 1.9rem;
     cursor: pointer;
   }
@@ -248,7 +248,7 @@ li {
             align-items: center;
     padding: 25px 0;
   }
-  .navbar h1 {
+  .navbar h6 {
     font-size: 1.6rem;
     cursor: pointer;
   }
@@ -941,11 +941,6 @@ li {
     font-weight: bold;
     font-size: 2.5rem;
   }
-  .each-food h6 {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    font-size: 2rem;
-  }
   .main-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -981,9 +976,6 @@ li {
 @media screen and (max-width: 500px) {
   .each-food h1 {
     font-size: 2.1rem;
-  }
-  .each-food h6 {
-    font-size: 1.8rem;
   }
   .main-content h2 {
     font-size: 1.1rem;
