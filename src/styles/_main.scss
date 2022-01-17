@@ -28,6 +28,12 @@
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+.router-link {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+}
+
 .food {
   display: flex;
   cursor: pointer;
@@ -66,8 +72,12 @@
 }
 
 .foods > div:first-of-type {
-  display: block;
   grid-row: 3 span;
+
+  .router-link {
+    display: flex;
+    flex-flow: column;
+  }
   img {
     height: auto;
     width: 100%;
@@ -93,6 +103,13 @@
     gap: 1rem;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .router-link {
+    display: flex;
+    flex-flow: column;
+    text-decoration: none;
+    color: inherit;
   }
 
   .food {
